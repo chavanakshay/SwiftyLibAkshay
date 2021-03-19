@@ -16,6 +16,7 @@
 		269AC9A7260493E200FED5CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269AC9A5260493E200FED5CE /* Main.storyboard */; };
 		269AC9A9260493E300FED5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269AC9A8260493E300FED5CE /* Assets.xcassets */; };
 		269AC9AC260493E300FED5CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269AC9AA260493E300FED5CE /* LaunchScreen.storyboard */; };
+		269AC9B52604A5D000FED5CE /* SwiftyLibAkshay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AC9B42604A5D000FED5CE /* SwiftyLibAkshay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		269AC9A8260493E300FED5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269AC9AB260493E300FED5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269AC9AD260493E300FED5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269AC9B42604A5D000FED5CE /* SwiftyLibAkshay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibAkshay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				269AC9802604905700FED5CE /* SwiftyLibAkshay.h */,
 				269AC9812604905700FED5CE /* Info.plist */,
+				269AC9B42604A5D000FED5CE /* SwiftyLibAkshay.swift */,
 			);
 			path = SwiftyLibAkshay;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					269AC97C2604905700FED5CE = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					269AC9852604905700FED5CE = {
 						CreatedOnToolsVersion = 12.2;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269AC9B52604A5D000FED5CE /* SwiftyLibAkshay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		269AC9922604905700FED5CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.app.SwiftyLibAkshay;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		269AC9932604905700FED5CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		269AC9952604905700FED5CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibAkshayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		269AC9962604905700FED5CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibAkshayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
